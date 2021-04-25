@@ -1,5 +1,6 @@
-import os
+#This is a standalone script
 
+import os
 
 def Magic(ssidName):
     password = str(os.popen("netsh wlan show profile " + ssidName + " key=clear").readlines())
